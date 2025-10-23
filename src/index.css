@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*By default, browsers give some elements (like <p> or <h1>) their own padding and margin — which can mess up your layout.
+So this line removes all the default spacing, giving you a clean slate to design from*/
+/*box-sizing: the total width becomes 120px (width + padding).But with box-sizing: border-box, the padding and border are included inside the width — so it stays 100px total.*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+#root{
+  min-height: 100vh; /* vh: viewport height */
+  display: flex;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}
